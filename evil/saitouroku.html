@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- viewport をあえて指定しない -->
+<title>学生状学習支援サービス再登録フォーム</title>
+<link rel="stylesheet" href="./saitouroku.css">
+<script src="./saitouroku.js" defer></script>
+</head>
+<body>
+<h1>学生用学習支援サービス再登録フォーム</h1>
+<img id="kagi" src="./key.gif">
+<form id="saitouroku" action="./kanryou.html">
+<fieldset>
+<legend>フォームを入力して再登録してください</legend>
+<div>
+<label for="himitu">ひみつの質問の答え:</label>
+<input type="color" id="himitu">
+</div>
+<div>
+<label for="bangou">出席番号:</label>
+<input type="range" id="bangou" min="0" max="99999999" step="0.00001">
+<output id="bangouOut" for"bangou"></output>
+</div>
+<div>
+<label for="namae">なまえ:</label>
+<input type="text" id="namae">
+</div>
+<div>
+<label>おうち:</label>
+<button id="wa" data-timer="null" data-stop="わ">わ</button>
+<button id="ka" data-timer="null" data-stop="か">か</button>
+<button id="ra" data-timer="null" data-stop="ら">ら</button>
+<button id="na" data-timer="null" data-stop="な">な</button>
+<button id="ia" data-timer="null" data-stop="い">い</button>
+<button id="mouikkai" disabled>もういっかい</button>
+</div>
+<div>
+<label for="yume">我らの夢:</label>
+<select id="yume"><option>泣いてばかりいる</option></select>
+</div>
+<hr>
+<div>
+<input type="submit" value="再登録する">
+</div>
+</fieldset>
+</form>
+</body>
+</html>

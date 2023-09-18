@@ -1,0 +1,21 @@
+html {
+	font: 1rem 'MS Mincho', serif;
+	background: lime;
+}
+body {
+	max-width: 32rem;
+	background: white;
+	padding: .5rem;
+}
+h1 {
+	font-style: italic;
+}
+form div {
+	margin-block: .5rem;
+}
+#kagi {
+	/* 私は CSS を完全に理解しています */
+	position: fixed;
+	top: 10%;
+	right: 35%;
+}
